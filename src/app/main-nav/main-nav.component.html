@@ -1,0 +1,36 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset | async) ? 'dialog' : 'navigation'" [mode]="(isHandset | async) ? 'over' : 'side'" [opened]="(isHandset | async)">
+        <mat-toolbar aria-label="Example home icon">
+            <mat-icon>fingerprint</mat-icon>CSDocs</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item>
+                <mat-icon>settings</mat-icon>General Adn.</a>
+            <a mat-list-item class="relative waves-light" (click)="openDialog()">
+                <mat-icon>dns</mat-icon>Server Monitor</a>
+            <a mat-list-item (click)="openDialog1()">
+                <mat-icon>verified</mat-icon>Admin. Preferent.</a>
+            <a mat-list-item style="background-color: teal;">
+                <mat-icon>save</mat-icon>Global Log</a>
+            <a mat-list-item (click)="openDialog3()">
+                <mat-icon>psychology</mat-icon>Reset Server</a>
+            <a mat-list-item (click)="openDialog4()">
+                <mat-icon>verified_user</mat-icon>Global Settis</a>
+            <a mat-list-item style="background-color: teal;">
+                <mat-icon>supervisor_account</mat-icon>User & Group</a>
+            <hr>
+            <a mat-list-item href="#">
+                <mat-icon>lock</mat-icon>General Enroll.</a>
+            <a mat-list-item href="#">
+                <mat-icon>lock_open</mat-icon>Enroll People</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="accent">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset | async">
+            <mat-icon aria-label="Side nav toggle icon">home</mat-icon>
+                  </button>
+            <span>CA CSDocs</span>
+        </mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,38 @@
+<div class="csdocs-skin">
+    <div class="csdocs-skin-body">
+        <h1>Bienvenido al Generador</h1>
+        <h1>de esquemas de documentos </h1>
+        <hr>
+        <p>Aquí podrá usted encontrar toda la información de los documentos digitalizados de la Secretaría; Si usted no contiene un usuario y contraseña, por favor comuníquese al área de soporte técnico en horario de 09:00 am - 18:00 pm.</p>
+    </div>
+</div>
+<div>
+    <mat-card class="csdocs-card">
+        <mat-card-header>
+            <div mat-card-avatar class="csdocs-header-image"> </div>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/image/logo.jpg">
+        <mat-card-content>
+            <form>
+                <mat-form-field>
+                    <!-- <mat-icon>account_circle</mat-icon> -->
+                    <input matInput type="text" name="name" placeholder="Username" [(ngModel)]="user.name">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="email" id="email" name="email" placeholder="Email" [(ngModel)]="user.email">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="password" id="password" name="password" placeholder="Password" [(ngModel)]="user.password">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="number" name="nip" placeholder="Nip">
+                </mat-form-field>
+
+                <input mat-matInput type="file" (change)="fileChange($event)" name="ctr" placeholder="Ctr">
+                <input mat-matInput type="file" name="key" placeholder="Key">
+
+                <button mat-raised-button (click)="send()" color="primary">Iniciar Sesion</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

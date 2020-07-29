@@ -1,0 +1,69 @@
+.body.container {
+    text-align: justify;
+}
+
+#close {
+    float: right;
+    display: inline-block;
+    padding: 2px 5px;
+    background: #ccc;
+}
+
+#close:hover {
+    float: right;
+    display: inline-block;
+    padding: 2px 5px;
+    background: #ccc;
+    color: #fff;
+}
+
+
+/* Tamaño del contenedor */
+
+.container {
+    width: 1000px;
+    height: 500px;
+}
+
+
+/* Estilo de contener del titulo */
+
+.modal-header {
+    background: teal;
+    margin: -24px -39px 0px -39px !important;
+    cursor: move;
+}
+
+
+/*Estilo del titulo */
+
+.modal-title {
+    font-size: 30px;
+}
+
+table {
+    margin: 40px 0px 0px 0px !important;
+    /* margin: auto; */
+    width: 100%;
+    font-size: 18px;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+thead {
+    background-color: #084236;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover th {
+    background-color: #369681;
+    color: white;
+}

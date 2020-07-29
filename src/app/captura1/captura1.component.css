@@ -1,0 +1,14 @@
+.container {
+    width: 1000px;
+    height: 600px;
+}
+
+.modal-header {
+    background: teal;
+    margin: -24px -39px 0px -39px !important;
+    cursor: move;
+}
+
+.mat-tab-group {
+    margin-bottom: 150px;
+}

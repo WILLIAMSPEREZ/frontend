@@ -1,0 +1,103 @@
+<div class="container">
+    <!-- cabecera del diálogo -->
+    <div class="modal-header">
+        <h1 class="modal-title" mat-dialog-title>
+            <mat-icon>dns</mat-icon>Server Monitor</h1>
+        <button mat-dialog-close>X</button>
+    </div>
+    <!-- cuerpo del diálogo -->
+    <div class="modal-body">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 70px">Estatus</th>
+                    <th style="width: 70px">Zone</th>
+                    <th style="width: 70px">Type</th>
+                    <th style="width: 70px">Fiscal Ip</th>
+                    <th style="width: 70px">Descripcion</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_ns1">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon disabled>markunread_mailbox</mat-icon>
+                </th>
+                <th>DNS1</th>
+                <th>192.168.1.101</th>
+                <th>Servidor de DNS</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_ns2">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>markunread_mailbox</mat-icon>
+                </th>
+                <th>DNS2</th>
+                <th>192.168.1.102</th>
+                <th>Servidor redundante DNS</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_ca">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>language</mat-icon>
+                </th>
+                <th>CA</th>
+                <th>192.168.1.103</th>
+                <th>Servidor Web de entrega de firmas</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_auth">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>message</mat-icon>
+                </th>
+                <th>AUTH</th>
+                <th>192.168.1.105</th>
+                <th>Servidor de transacciones y log de operaciones</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_sgbd">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>next_week</mat-icon>
+                </th>
+                <th>SGBD</th>
+                <th>192.168.1.107</th>
+                <th>Servidor para validacion de Documentos</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_ldap">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>description</mat-icon>
+                </th>
+                <th>LDAP</th>
+                <th>192.168.1.108</th>
+                <th>Servidor para almacenar Documento</th>
+            </tr>
+            <tr>
+                <th>
+                    <mat-icon style="color: green;" id="btn_xsd">power_settings_new</mat-icon>
+                </th>
+                <th>
+                    <mat-icon>fingerprint</mat-icon>
+                </th>
+                <th>SCHEMA</th>
+                <th>192.168.1.109</th>
+                <th>Servidor de generacion de firmas a usuarios</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- pie del diálogo -->
+<!-- <div class="modal-footer">
+        <button mat-button mat-dialog-close type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    </div> -->
